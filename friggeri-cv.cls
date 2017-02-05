@@ -113,8 +113,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       \bodyfont #3%
     };
   \end{tikzpicture}
-  \vspace{0.5cm}
-  \vspace{-2.5\parskip}
+  \vspace{1.1cm}
 }
 
 
@@ -177,7 +176,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
-\setlength{\tabcolsep}{10pt}
+\setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
@@ -188,7 +187,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    {\scriptsize\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
@@ -205,7 +204,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}
   }
-  \begin{textblock}{8}(2.0, 0.55)
+  \begin{textblock}{8}(2.5, 0.55)
   \begin{flushright}
   \obeycr
 }{%
@@ -328,5 +327,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=1cm,right=1cm,bottom=0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
